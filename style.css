@@ -1,0 +1,85 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e7e7e9;
+}
+
+h2 {
+  padding: 20px;
+  display: flex;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #8c98e5;
+}
+.wrapper {
+  width: 140vmin;
+  height: 70vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  
+  background: #233feb;
+}
+.game-details {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+  border: 20px solid #e74c3c;
+  border-bottom: 0px solid white;
+  border-radius: 5px;
+}
+.play-board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: blue;
+  grid-template: repeat(20, 1fr) / repeat(25, 1fr);
+  border: 20px solid #e74c3c;
+  border-top: 0px;
+  border-radius: 5px;
+}
+.play-board .food {
+  background: #eaf38e;
+}
+.play-board .food::before {
+  content: "FOOD";
+  color: rgba(255, 0, 0, 0.663);
+  font-weight: bold;
+}
+.play-board .head {
+  background: #b3982a;
+}
+.play-board .head::before {
+  content: "Ninja";
+  color: rgba(255, 0, 0, 0.663);
+  font-weight: bold;
+}
+.play-board .child {
+  background: #76ba41;
+}
+.play-board .child::before {
+  content: "Spider";
+  color: rgba(255, 0, 0, 0.663);
+  font-weight: bold;
+}
+.blank {
+  height: 3vmin;
+  background: white;
+}
